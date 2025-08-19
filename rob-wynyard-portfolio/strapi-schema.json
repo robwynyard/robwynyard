@@ -1,0 +1,341 @@
+{
+  "collections": {
+    "personal-info": {
+      "kind": "singleType",
+      "collectionName": "personal_infos",
+      "info": {
+        "singularName": "personal-info",
+        "pluralName": "personal-infos",
+        "displayName": "Personal Info",
+        "description": "Personal information and contact details"
+      },
+      "options": {
+        "draftAndPublish": false
+      },
+      "attributes": {
+        "name": {
+          "type": "string",
+          "required": true,
+          "maxLength": 100
+        },
+        "title": {
+          "type": "string",
+          "required": true,
+          "maxLength": 200
+        },
+        "email": {
+          "type": "email",
+          "required": true
+        },
+        "phone": {
+          "type": "string",
+          "required": true
+        },
+        "location": {
+          "type": "string",
+          "required": true
+        },
+        "bio": {
+          "type": "text",
+          "required": true
+        },
+        "profileImage": {
+          "type": "media",
+          "multiple": false,
+          "required": false,
+          "allowedTypes": ["images"]
+        },
+        "github": {
+          "type": "string",
+          "required": true
+        },
+        "linkedin": {
+          "type": "string",
+          "required": true
+        },
+        "cvFile": {
+          "type": "media",
+          "multiple": false,
+          "required": false,
+          "allowedTypes": ["files"]
+        },
+        "availability": {
+          "type": "string",
+          "required": true
+        },
+        "responseTime": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    "experience": {
+      "kind": "collectionType",
+      "collectionName": "experiences",
+      "info": {
+        "singularName": "experience",
+        "pluralName": "experiences",
+        "displayName": "Experience",
+        "description": "Work experience and education history"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "attributes": {
+        "company": {
+          "type": "string",
+          "required": true
+        },
+        "position": {
+          "type": "string",
+          "required": true
+        },
+        "startDate": {
+          "type": "date",
+          "required": true
+        },
+        "endDate": {
+          "type": "date",
+          "required": false
+        },
+        "current": {
+          "type": "boolean",
+          "default": false
+        },
+        "type": {
+          "type": "enumeration",
+          "enum": ["business", "technical", "education"],
+          "required": true
+        },
+        "description": {
+          "type": "text",
+          "required": true
+        },
+        "achievements": {
+          "type": "json",
+          "required": true
+        },
+        "skills": {
+          "type": "json",
+          "required": true
+        },
+        "icon": {
+          "type": "string",
+          "required": true
+        },
+        "color": {
+          "type": "string",
+          "required": true
+        },
+        "order": {
+          "type": "integer",
+          "required": true,
+          "default": 0
+        }
+      }
+    },
+    "project": {
+      "kind": "collectionType",
+      "collectionName": "projects",
+      "info": {
+        "singularName": "project",
+        "pluralName": "projects",
+        "displayName": "Project",
+        "description": "Portfolio projects and case studies"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "attributes": {
+        "title": {
+          "type": "string",
+          "required": true
+        },
+        "subtitle": {
+          "type": "string",
+          "required": true
+        },
+        "description": {
+          "type": "text",
+          "required": true
+        },
+        "fullDescription": {
+          "type": "text",
+          "required": true
+        },
+        "image": {
+          "type": "media",
+          "multiple": false,
+          "required": false,
+          "allowedTypes": ["images"]
+        },
+        "technologies": {
+          "type": "json",
+          "required": true
+        },
+        "category": {
+          "type": "enumeration",
+          "enum": ["web", "business", "mobile"],
+          "required": true
+        },
+        "featured": {
+          "type": "boolean",
+          "default": false
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "highlights": {
+          "type": "json",
+          "required": true
+        },
+        "liveUrl": {
+          "type": "string",
+          "required": false
+        },
+        "githubUrl": {
+          "type": "string",
+          "required": false
+        },
+        "year": {
+          "type": "string",
+          "required": true
+        },
+        "duration": {
+          "type": "string",
+          "required": true
+        },
+        "role": {
+          "type": "string",
+          "required": true
+        },
+        "order": {
+          "type": "integer",
+          "required": true,
+          "default": 0
+        }
+      }
+    },
+    "skill-category": {
+      "kind": "collectionType",
+      "collectionName": "skill_categories",
+      "info": {
+        "singularName": "skill-category",
+        "pluralName": "skill-categories",
+        "displayName": "Skill Category",
+        "description": "Categories for organizing skills"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "attributes": {
+        "name": {
+          "type": "string",
+          "required": true,
+          "unique": true
+        },
+        "label": {
+          "type": "string",
+          "required": true
+        },
+        "color": {
+          "type": "string",
+          "required": true
+        },
+        "icon": {
+          "type": "string",
+          "required": true
+        },
+        "order": {
+          "type": "integer",
+          "required": true,
+          "default": 0
+        },
+        "skills": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::skill.skill",
+          "mappedBy": "category"
+        }
+      }
+    },
+    "skill": {
+      "kind": "collectionType",
+      "collectionName": "skills",
+      "info": {
+        "singularName": "skill",
+        "pluralName": "skills",
+        "displayName": "Skill",
+        "description": "Individual skills and proficiency levels"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "attributes": {
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "level": {
+          "type": "integer",
+          "required": true,
+          "min": 0,
+          "max": 100
+        },
+        "years": {
+          "type": "integer",
+          "required": true,
+          "min": 0
+        },
+        "description": {
+          "type": "text",
+          "required": true
+        },
+        "category": {
+          "type": "relation",
+          "relation": "manyToOne",
+          "target": "api::skill-category.skill-category",
+          "inversedBy": "skills"
+        }
+      }
+    },
+    "contact-message": {
+      "kind": "collectionType",
+      "collectionName": "contact_messages",
+      "info": {
+        "singularName": "contact-message",
+        "pluralName": "contact-messages",
+        "displayName": "Contact Message",
+        "description": "Messages sent through the contact form"
+      },
+      "options": {
+        "draftAndPublish": false
+      },
+      "attributes": {
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "email": {
+          "type": "email",
+          "required": true
+        },
+        "subject": {
+          "type": "string",
+          "required": false
+        },
+        "message": {
+          "type": "text",
+          "required": true
+        },
+        "status": {
+          "type": "enumeration",
+          "enum": ["new", "read", "replied"],
+          "default": "new",
+          "required": true
+        }
+      }
+    }
+  }
+}

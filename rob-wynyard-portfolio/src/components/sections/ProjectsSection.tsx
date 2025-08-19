@@ -13,6 +13,8 @@ import {
   Button,
   IconButton,
   Badge,
+  CircularProgress,
+  Alert,
 } from '@mui/material';
 import {
   Launch,
@@ -26,112 +28,13 @@ import {
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAtom } from 'jotai';
 import { projectFilterAtom } from '../../store/atoms';
+import { useProjects } from '../../hooks/usePortfolioData';
+import { Project } from '../../lib/strapi';
 
 const MotionBox = motion(Box);
 const MotionCard = motion(Card);
 
-const projectsData = [
-  {
-    id: 'te-reo-platform',
-    title: 'Te Reo Māori Learning Platform',
-    subtitle: 'AI-Powered Cultural Learning Experience',
-    description: 'An immersive and culturally authentic, AI-powered, voice-enabled Te Reo Māori learning platform featuring ancestral avatars, dialect selection, and tikanga integration.',
-    fullDescription: 'Leading the development of a groundbreaking language learning platform that combines cutting-edge AI technology with deep cultural authenticity. The platform features real-time pronunciation feedback, scalable avatar personalisation, and immersive cultural experiences that honor Māori values and traditions.',
-    image: '/images/te-reo-project.jpg',
-    technologies: ['React', 'Node.js', 'AI/ML', 'Voice Recognition', 'Cultural Design', 'UX Research'],
-    category: 'web',
-    featured: true,
-    status: 'In Development',
-    highlights: [
-      'AI-powered voice recognition for pronunciation feedback',
-      'Culturally authentic ancestral avatar system',
-      'Dialect selection respecting regional variations',
-      'Tikanga integration ensuring cultural alignment',
-      'Scalable architecture supporting real-time interactions',
-      'Cross-functional collaboration with cultural advisors'
-    ],
-    liveUrl: null,
-    githubUrl: null, // Private repository
-    year: '2025',
-    duration: '6 months',
-    role: 'Full Stack Developer & UX Contributor',
-  },
-  {
-    id: 'wynbar-portfolio',
-    title: 'Wynbar Collective Property Portfolio',
-    subtitle: 'Investment Property Management System',
-    description: 'Comprehensive property management and investment tracking system for multi-property portfolio operations.',
-    fullDescription: 'Built a sophisticated property management system to track renovations, budgeting, compliance, and tenant relations across multiple investment properties. Features include financial reporting, project management workflows, and ROI analytics.',
-    image: '/images/wynbar-project.jpg',
-    technologies: ['Property Management', 'Financial Analytics', 'Project Management', 'Compliance Tracking'],
-    category: 'business',
-    featured: false,
-    status: 'Live & Active',
-    highlights: [
-      'Multi-property portfolio management',
-      'Automated financial reporting and budgeting',
-      'Compliance tracking and documentation',
-      'Tenant relationship management',
-      'ROI analytics and performance metrics',
-      'Strategic planning and asset optimization'
-    ],
-    liveUrl: null,
-    githubUrl: null,
-    year: '2020-2025',
-    duration: 'Ongoing',
-    role: 'Managing Partner',
-  },
-  {
-    id: 'computer-guru-platform',
-    title: 'Computer Guru Service Platform',
-    subtitle: 'IT Support & Business Management System',
-    description: 'Complete business management system for computer repair and IT support services, including customer management and inventory tracking.',
-    fullDescription: 'Developed and managed a comprehensive platform for computer repair business operations, featuring customer relationship management, inventory tracking, service scheduling, and financial reporting systems.',
-    image: '/images/computer-guru-project.jpg',
-    technologies: ['Business Systems', 'Customer Management', 'Inventory Tracking', 'Service Management'],
-    category: 'business',
-    featured: false,
-    status: 'Completed',
-    highlights: [
-      'Customer relationship management system',
-      'Inventory and parts tracking',
-      'Service scheduling and workflow management',
-      'Financial reporting and business analytics',
-      'Growth strategy implementation',
-      'Brand development and marketing systems'
-    ],
-    liveUrl: null,
-    githubUrl: null,
-    year: '2013-2017',
-    duration: '4 years',
-    role: 'Founder & Managing Director',
-  },
-  {
-    id: 'portfolio-website',
-    title: 'Personal Portfolio Website',
-    subtitle: 'Modern Material Design 3 Portfolio',
-    description: 'This portfolio website built with Next.js, Material-UI, and Framer Motion, featuring responsive design and smooth animations.',
-    fullDescription: 'A modern, responsive portfolio website showcasing my journey from business leadership to full-stack development. Built with the latest web technologies and following Material Design 3 principles for optimal user experience.',
-    image: '/images/portfolio-project.jpg',
-    technologies: ['Next.js', 'TypeScript', 'Material-UI', 'Framer Motion', 'Jotai', 'Responsive Design'],
-    category: 'web',
-    featured: false,
-    status: 'Live',
-    highlights: [
-      'Material Design 3 implementation',
-      'Responsive design across all devices',
-      'Smooth animations and micro-interactions',
-      'TypeScript for type safety',
-      'Modern component architecture',
-      'Performance optimized'
-    ],
-    liveUrl: 'https://robwynyard.dev',
-    githubUrl: 'https://github.com/robwynyard/robwynyard',
-    year: '2025',
-    duration: '2 weeks',
-    role: 'Full Stack Developer',
-  },
-];
+// Static data removed - now using dynamic Strapi data via useProjects hook
 
 const filterOptions = [
   { label: 'All Projects', value: 'all', icon: <FilterList /> },
@@ -140,7 +43,7 @@ const filterOptions = [
 ];
 
 interface ProjectCardProps {
-  project: typeof projectsData[0];
+  project: Project;
   index: number;
 }
 
@@ -207,9 +110,9 @@ function ProjectCard({ project, index }: ProjectCardProps) {
               color: project.featured ? 'primary.main' : 'secondary.main',
             }}
           >
-            {project.id === 'te-reo-platform' ? (
+            {project.title.includes('Te Reo') ? (
               <Translate sx={{ fontSize: 40 }} />
-            ) : project.id === 'portfolio-website' ? (
+            ) : project.category === 'web' ? (
               <Code sx={{ fontSize: 40 }} />
             ) : (
               <Business sx={{ fontSize: 40 }} />
@@ -368,10 +271,9 @@ function ProjectCard({ project, index }: ProjectCardProps) {
 
 export default function ProjectsSection() {
   const [filter, setFilter] = useAtom(projectFilterAtom);
+  const { data: projects, loading, error } = useProjects(filter);
 
-  const filteredProjects = projectsData.filter(project => 
-    filter === 'all' || project.category === filter
-  );
+  const filteredProjects = projects;
 
   // Sort to show featured project first
   const sortedProjects = [...filteredProjects].sort((a, b) => {
@@ -436,43 +338,62 @@ export default function ProjectsSection() {
                 >
                   {option.label}
                   {option.value === 'all' && (
-                    <Badge badgeContent={projectsData.length} color="secondary" sx={{ ml: 1 }} />
+                    <Badge badgeContent={projects.length} color="secondary" sx={{ ml: 1 }} />
                   )}
                 </Button>
               ))}
             </Stack>
           </Box>
 
-          {/* Projects Grid */}
-          <AnimatePresence mode="wait">
-            <MotionBox
-              key={filter}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.3 }}
+          {/* Loading State */}
+          {loading && (
+            <Box sx={{ display: 'flex', justifyContent: 'center', py: 8 }}>
+              <CircularProgress size={48} />
+            </Box>
+          )}
+
+          {/* Error State */}
+          {error && (
+            <Alert 
+              severity="info" 
+              sx={{ mb: 4 }}
             >
-              <Box
-                sx={{
-                  display: 'grid',
-                  gridTemplateColumns: {
-                    xs: '1fr',
-                    md: 'repeat(2, 1fr)',
-                    lg: 'repeat(3, 1fr)',
-                  },
-                  gap: 4,
-                }}
+              Using cached project data. Strapi connection: {error}
+            </Alert>
+          )}
+
+          {/* Projects Grid */}
+          {!loading && (
+            <AnimatePresence mode="wait">
+              <MotionBox
+                key={filter}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.3 }}
               >
-                {sortedProjects.map((project, index) => (
-                  <ProjectCard
-                    key={project.id}
-                    project={project}
-                    index={index}
-                  />
-                ))}
-              </Box>
-            </MotionBox>
-          </AnimatePresence>
+                <Box
+                  sx={{
+                    display: 'grid',
+                    gridTemplateColumns: {
+                      xs: '1fr',
+                      md: 'repeat(2, 1fr)',
+                      lg: 'repeat(3, 1fr)',
+                    },
+                    gap: 4,
+                  }}
+                >
+                  {sortedProjects.map((project, index) => (
+                    <ProjectCard
+                      key={project.id}
+                      project={project}
+                      index={index}
+                    />
+                  ))}
+                </Box>
+              </MotionBox>
+            </AnimatePresence>
+          )}
 
           {/* Featured Project Callout */}
           {filter === 'all' && (
