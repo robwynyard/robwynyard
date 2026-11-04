@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Career timeline from network engineering in 2012 to AI / Full Stack Engineer at Seen Ventures">
+  <defs><clipPath id="fr"><rect width="1200" height="300" rx="22"/></clipPath></defs>
+  <g clip-path="url(#fr)" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif">
+    <rect width="1200" height="300" fill="#FBF8F2"/>
+    
+    <rect y="128" width="1200" height="172" fill="#F4ECDD"/>
+    <path d="M0 128 L100 128  Q150.0 118 200.0 128 T300.0 128 Q350.0 118 400.0 128 T500.0 128 Q550.0 118 600.0 128 T700.0 128 Q750.0 118 800.0 128 T900.0 128 Q950.0 118 1000.0 128 T1100.0 128 L1200 128 L1200 0 L0 0 Z" fill="#E6F0EE"/>
+    <path d="M100 128 Q150.0 118 200.0 128 T300.0 128 Q350.0 118 400.0 128 T500.0 128 Q550.0 118 600.0 128 T700.0 128 Q750.0 118 800.0 128 T900.0 128 Q950.0 118 1000.0 128 T1100.0 128" fill="none" stroke="#9CC2BF" stroke-width="4" stroke-linecap="round" stroke-dasharray="1100" stroke-dashoffset="1100">
+      <animate attributeName="stroke-dashoffset" values="1100;0;0" keyTimes="0;.45;1" dur="7s" repeatCount="indefinite"/></path>
+    <ellipse cx="140.0" cy="152" rx="6" ry="3.4" fill="#E9DCC4" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="8s" begin="0.4s" repeatCount="indefinite"/></ellipse><ellipse cx="180.0" cy="142" rx="6" ry="3.4" fill="#E9DCC4" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="8s" begin="0.8s" repeatCount="indefinite"/></ellipse><ellipse cx="220.0" cy="152" rx="6" ry="3.4" fill="#E9DCC4" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="8s" begin="1.2s" repeatCount="indefinite"/></ellipse><ellipse cx="340.0" cy="152" rx="6" ry="3.4" fill="#E9DCC4" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="8s" begin="1.6s" repeatCount="indefinite"/></ellipse><ellipse cx="380.0" cy="142" rx="6" ry="3.4" fill="#E9DCC4" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="8s" begin="2.0s" repeatCount="indefinite"/></ellipse><ellipse cx="420.0" cy="152" rx="6" ry="3.4" fill="#E9DCC4" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="8s" begin="2.4s" repeatCount="indefinite"/></ellipse><ellipse cx="540.0" cy="152" rx="6" ry="3.4" fill="#E9DCC4" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="8s" begin="2.8s" repeatCount="indefinite"/></ellipse><ellipse cx="580.0" cy="142" rx="6" ry="3.4" fill="#E9DCC4" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="8s" begin="3.2s" repeatCount="indefinite"/></ellipse><ellipse cx="620.0" cy="152" rx="6" ry="3.4" fill="#E9DCC4" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="8s" begin="3.6s" repeatCount="indefinite"/></ellipse><ellipse cx="740.0" cy="152" rx="6" ry="3.4" fill="#E9DCC4" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="8s" begin="4.0s" repeatCount="indefinite"/></ellipse><ellipse cx="780.0" cy="142" rx="6" ry="3.4" fill="#E9DCC4" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="8s" begin="4.4s" repeatCount="indefinite"/></ellipse><ellipse cx="820.0" cy="152" rx="6" ry="3.4" fill="#E9DCC4" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="8s" begin="4.8s" repeatCount="indefinite"/></ellipse><ellipse cx="940.0" cy="152" rx="6" ry="3.4" fill="#E9DCC4" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="8s" begin="5.2s" repeatCount="indefinite"/></ellipse><ellipse cx="980.0" cy="142" rx="6" ry="3.4" fill="#E9DCC4" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="8s" begin="5.6s" repeatCount="indefinite"/></ellipse><ellipse cx="1020.0" cy="152" rx="6" ry="3.4" fill="#E9DCC4" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="8s" begin="6.0s" repeatCount="indefinite"/></ellipse>
+      <circle cx="100.0" cy="128" r="14" fill="#FBF8F2" stroke="#B3CAD6" stroke-width="3"/><circle cx="100.0" cy="128" r="6" fill="#4A7189"/>
+      <text x="100.0" y="94" font-size="18" font-weight="800" fill="#4A7189" text-anchor="middle">2012</text>
+      <text x="100.0" y="190" font-size="16" font-weight="700" fill="#2E4048" text-anchor="middle">Network Engineering</text>
+      <text x="100.0" y="214" font-size="13.5" fill="#6B7C83" text-anchor="middle">Diploma, Avonmore</text>
+      <text x="100.0" y="233" font-size="13.5" fill="#6B7C83" text-anchor="middle">CompTIA A+ &amp; Network+</text>
+      <circle cx="300.0" cy="128" r="14" fill="#FBF8F2" stroke="#B2C3A2" stroke-width="3"/><circle cx="300.0" cy="128" r="6" fill="#5A714F"/>
+      <text x="300.0" y="94" font-size="18" font-weight="800" fill="#5A714F" text-anchor="middle">2012+</text>
+      <text x="300.0" y="190" font-size="16" font-weight="700" fill="#2E4048" text-anchor="middle">IT &amp; Business Ops</text>
+      <text x="300.0" y="214" font-size="13.5" fill="#6B7C83" text-anchor="middle">IT support, operations</text>
+      <text x="300.0" y="233" font-size="13.5" fill="#6B7C83" text-anchor="middle">and running teams</text>
+      <circle cx="500.0" cy="128" r="14" fill="#FBF8F2" stroke="#E6CF9F" stroke-width="3"/><circle cx="500.0" cy="128" r="6" fill="#866533"/>
+      <text x="500.0" y="94" font-size="18" font-weight="800" fill="#866533" text-anchor="middle">2025</text>
+      <text x="500.0" y="190" font-size="16" font-weight="700" fill="#2E4048" text-anchor="middle">Mission Ready HQ</text>
+      <text x="500.0" y="214" font-size="13.5" fill="#6B7C83" text-anchor="middle">Tech Product Dev cert</text>
+      <text x="500.0" y="233" font-size="13.5" fill="#6B7C83" text-anchor="middle">Web Dev &amp; Design diploma</text>
+      <circle cx="700.0" cy="128" r="14" fill="#FBF8F2" stroke="#E6B19D" stroke-width="3"/><circle cx="700.0" cy="128" r="6" fill="#A35E4A"/>
+      <text x="700.0" y="94" font-size="18" font-weight="800" fill="#A35E4A" text-anchor="middle">2025</text>
+      <text x="700.0" y="190" font-size="16" font-weight="700" fill="#2E4048" text-anchor="middle">Joined Seen Ventures</text>
+      <text x="700.0" y="214" font-size="13.5" fill="#6B7C83" text-anchor="middle">Full stack builds</text>
+      <text x="700.0" y="233" font-size="13.5" fill="#6B7C83" text-anchor="middle">for NZ organisations</text>
+      <circle cx="900.0" cy="128" r="14" fill="#FBF8F2" stroke="#D9938A" stroke-width="3"/><circle cx="900.0" cy="128" r="6" fill="#9E4A42"/>
+      <text x="900.0" y="94" font-size="18" font-weight="800" fill="#9E4A42" text-anchor="middle">2026</text>
+      <text x="900.0" y="190" font-size="16" font-weight="700" fill="#2E4048" text-anchor="middle">AI Platforms</text>
+      <text x="900.0" y="214" font-size="13.5" fill="#6B7C83" text-anchor="middle">Governed RAG, own</text>
+      <text x="900.0" y="233" font-size="13.5" fill="#6B7C83" text-anchor="middle">products, BOP AI mentor</text><circle cx="1100.0" cy="128" r="14" fill="none" stroke="#3F6E71" stroke-width="2"><animate attributeName="r" values="14;28;14" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0;1" dur="2.4s" repeatCount="indefinite"/></circle>
+      <circle cx="1100.0" cy="128" r="14" fill="#FBF8F2" stroke="#9CC2BF" stroke-width="3"/><circle cx="1100.0" cy="128" r="6" fill="#3F6E71"/>
+      <text x="1100.0" y="94" font-size="20" font-weight="800" fill="#3F6E71" text-anchor="middle">NOW</text>
+      <text x="1100.0" y="190" font-size="16" font-weight="700" fill="#2E4048" text-anchor="middle">AI / Full Stack Eng.</text>
+      <text x="1100.0" y="214" font-size="13.5" fill="#6B7C83" text-anchor="middle">Shipping AI products,</text>
+      <text x="1100.0" y="233" font-size="13.5" fill="#6B7C83" text-anchor="middle">mentoring cohorts</text>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="299" rx="22" fill="none" stroke="#E3D7C3"/>
+</svg>

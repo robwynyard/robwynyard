@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-label="Kia ora! I&#x27;m Rob, an AI / Full Stack Engineer at Seen Ventures, based in Papamoa.">
+  <defs><clipPath id="fr"><rect width="1200" height="330" rx="22"/></clipPath><linearGradient id="avsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D6E5EA"/><stop offset=".6" stop-color="#F3E3D3"/></linearGradient></defs>
+  <g clip-path="url(#fr)" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif">
+    <rect width="1200" height="330" fill="#FBF8F2"/>
+    
+    <circle cx="1200" cy="0" r="230" fill="#9CC2BF" opacity=".14"/>
+    <circle cx="0" cy="330" r="160" fill="#E6CF9F" opacity=".18"/>
+    <clipPath id="av"><circle cx="128" cy="150" r="78"/></clipPath>
+    <g clip-path="url(#av)">
+      <rect x="48" y="70" width="160" height="160" fill="url(#avsky)"/>
+      <circle cx="158" cy="156" r="16" fill="#F4D3B2"/>
+      <path d="M48 168 C78 158 92 130 114 128 C132 126 140 150 158 168 Z" fill="#AFBEC3"/>
+      <rect x="48" y="168" width="160" height="80" fill="#B4D0CF"/>
+      <path d="M0 198 Q15.0 193 30.0 198 T60 198 Q75.0 193 90.0 198 T120 198 Q135.0 193 150.0 198 T180 198 Q195.0 193 210.0 198 T240 198 Q255.0 193 270.0 198 T300 198 Q315.0 193 330.0 198 T360 198 Q375.0 193 390.0 198 T420 198 Q435.0 193 450.0 198 T480 198 L480 240 L0 240 Z" fill="#FFFFFF" opacity=".85"><animateTransform attributeName="transform" type="translate" values="48 0;-12 0" dur="3s" repeatCount="indefinite"/></path>
+      <rect x="48" y="206" width="160" height="40" fill="#F4ECDD"/>
+    </g>
+    <circle cx="128" cy="150" r="78" fill="none" stroke="#FFFFFF" stroke-width="6"/>
+    <circle cx="128" cy="150" r="82" fill="none" stroke="#9CC2BF" stroke-width="2"/>
+    <rect x="84" y="216" width="88" height="30" rx="15" fill="#FBF8F2" stroke="#E3D7C3"/>
+    <text x="128" y="236" font-size="13" font-weight="800" letter-spacing="1.5" fill="#3F6E71" text-anchor="middle">PAPAMOA</text>
+    <g transform="translate(268 76)">
+      <text font-size="36" font-weight="800" fill="#2E4048">Kia ora! I'm Rob.</text>
+      <g transform="translate(330 -4)"><g><animateTransform attributeName="transform" type="rotate" values="0 0 8;20 0 8;-10 0 8;20 0 8;0 0 8;0 0 8" keyTimes="0;.1;.2;.3;.4;1" dur="3s" repeatCount="indefinite"/>
+        <path d="M-7 10 v-15 a3 3 0 0 1 6 0 v8 v-12 a3 3 0 0 1 6 0 v12 v-10 a3 3 0 0 1 6 0 v12 v-6 a3 3 0 0 1 6 0 v8 c0 9 -5 15 -13 15 c-6 0 -9 -3 -12 -8 l-5 -8 a3 3 0 0 1 5 -3 z" fill="#E6CF9F" stroke="#866533" stroke-width="1.6" stroke-linejoin="round"/></g></g>
+    </g>
+    <text x="268" y="122" font-size="17.5" fill="#6B7C83">I'm an <tspan font-weight="800" fill="#3F6E71">AI / Full Stack Engineer</tspan> at <tspan font-weight="800" fill="#3F6E71">Seen Ventures</tspan>, based in sunny Papamoa.</text><text x="268" y="149" font-size="17.5" fill="#6B7C83">I build AI products for New Zealand organisations end to end: <tspan font-weight="700" fill="#2E4048">agentic systems</tspan></text><text x="268" y="176" font-size="17.5" fill="#6B7C83">and <tspan font-weight="700" fill="#2E4048">RAG pipelines that show their sources</tspan>, on Next.js and FastAPI platforms</text><text x="268" y="203" font-size="17.5" fill="#6B7C83">that real people use every day.</text>
+    <rect x="268" y="236" width="890" height="64" rx="16" fill="#B2C3A2" fill-opacity=".28"/>
+    <g transform="translate(300 268)">
+      <circle cx="-2" cy="-8" r="5" fill="#5A714F"/><circle cx="16" cy="8" r="5" fill="#5A714F"/><circle cx="-2" cy="10" r="5" fill="#5A714F" opacity=".6"/>
+      <path d="M-2 -8 L16 8 L-2 10" fill="none" stroke="#5A714F" stroke-width="2"/>
+    </g>
+    <text x="336" y="262" font-size="15.5" fill="#2E4048">I came to software from <tspan font-weight="800">network engineering, IT support and business operations</tspan>,</text>
+    <text x="336" y="285" font-size="15.5" fill="#2E4048">so I care about tools that work for the people using them, not only for the demo.</text>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="329" rx="22" fill="none" stroke="#E3D7C3"/>
+</svg>

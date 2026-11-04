@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="290" height="64" viewBox="0 0 290 64" role="img" aria-label="LinkedIn: Let&#x27;s connect">
+  <defs><clipPath id="fr"><rect width="290" height="64" rx="22"/></clipPath></defs>
+  <g clip-path="url(#fr)" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif">
+    <rect width="290" height="64" fill="#FBF8F2"/>
+    
+    <rect width="290" height="64" fill="#B3CAD6" fill-opacity=".22"/>
+    <circle cx="34" cy="32" r="21" fill="#B3CAD6" fill-opacity=".55"/>
+    <g transform="translate(34 32) scale(.62) translate(-34 -32)"><rect x="17" y="15" width="34" height="34" rx="7" fill="#4A7189"/><text x="34" y="40" font-size="21" font-weight="800" fill="#FBF8F2" text-anchor="middle">in</text></g>
+    <text x="66" y="29" font-size="16.5" font-weight="800" fill="#2E4048">LinkedIn</text>
+    <text x="66" y="48" font-size="12.5" font-weight="700" fill="#4A7189">Let's connect</text>
+    <text x="266" y="38" font-size="18" font-weight="800" fill="#4A7189" text-anchor="end">→
+      <animate attributeName="x" values="266;272;266" dur="1.4s" repeatCount="indefinite"/></text>
+  </g>
+  <rect x=".5" y=".5" width="289" height="63" rx="22" fill="none" stroke="#E3D7C3"/>
+</svg>

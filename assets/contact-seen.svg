@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="150" viewBox="0 0 390 150" role="img" aria-label="Seen Ventures: seen-ventures.com">
+  <defs><clipPath id="fr"><rect width="390" height="150" rx="22"/></clipPath></defs>
+  <g clip-path="url(#fr)" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif">
+    <rect width="390" height="150" fill="#FBF8F2"/>
+    
+    <circle cx="390" cy="0" r="110" fill="#E6B19D" opacity=".2"/>
+    <circle cx="62" cy="62" r="34" fill="#E6B19D" fill-opacity=".4"/>
+    <circle cx="62" cy="62" r="17" fill="none" stroke="#A35E4A" stroke-width="2.6"/><ellipse cx="62" cy="62" rx="7" ry="17" fill="none" stroke="#A35E4A" stroke-width="2.2"><animate attributeName="rx" values="7;12;3;7" dur="5s" repeatCount="indefinite"/></ellipse><path d="M46 56 H78 M46 68 H78" stroke="#A35E4A" stroke-width="2.2"/>
+    <text x="112" y="48" font-size="12" font-weight="800" letter-spacing="2.5" fill="#A35E4A">SEEN VENTURES</text>
+    <text x="112" y="76" font-size="17" font-weight="800" fill="#2E4048">seen-ventures.com</text>
+    <text x="112" y="108" font-size="14.5" font-weight="700" fill="#A35E4A">See where I work
+      <tspan dx="6">→<animate attributeName="dx" values="6;12;6" dur="1.4s" repeatCount="indefinite"/></tspan></text>
+    <path d="M0 136 Q32.5 132 65.0 136 T130 136 Q162.5 132 195.0 136 T260 136 Q292.5 132 325.0 136 T390 136 Q422.5 132 455.0 136 T520 136 Q552.5 132 585.0 136 T650 136 Q682.5 132 715.0 136 T780 136 L780 150 L0 150 Z" fill="#E6B19D" opacity=".6"><animateTransform attributeName="transform" type="translate" values="0 0;-130 0" dur="5s" repeatCount="indefinite"/></path>
+  </g>
+  <rect x=".5" y=".5" width="389" height="149" rx="22" fill="none" stroke="#E3D7C3"/>
+</svg>

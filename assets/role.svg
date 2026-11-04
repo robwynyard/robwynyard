@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="What I do at Seen Ventures">
+  <defs><clipPath id="fr"><rect width="1200" height="320" rx="22"/></clipPath></defs>
+  <g clip-path="url(#fr)" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif">
+    <rect width="1200" height="320" fill="#F4ECDD"/>
+    
+    <text x="52" y="52" font-size="13" font-weight="700" letter-spacing="3" fill="#6B7C83">NOW · 2025 – PRESENT</text>
+    <text x="52" y="84" font-size="28" font-weight="800" fill="#2E4048">AI / Full Stack Engineer at <tspan fill="#3F6E71">Seen Ventures</tspan></text>
+    
+    <rect x="50" y="104" width="348" height="190" rx="18" fill="#FFFFFF" stroke="#E3D7C3"/>
+    <path d="M0 8 Q14.5 4 29.0 8 T58 8 Q72.5 4 87.0 8 T116 8 Q130.5 4 145.0 8 T174 8 Q188.5 4 203.0 8 T232 8 Q246.5 4 261.0 8 T290 8 Q304.5 4 319.0 8 T348 8 L348 0 L0 0 Z" transform="translate(50 104)" fill="#9CC2BF" opacity=".55"/>
+    <rect x="50" y="104" width="348" height="8" fill="#9CC2BF" opacity=".55"/>
+    <text x="76" y="148" font-size="20" font-weight="800" fill="#3F6E71">Agentic AI</text><circle cx="80" cy="180" r="4.5" fill="#9CC2BF"/><text x="96" y="185" font-size="16" fill="#2E4048">RAG pipelines with citations</text><circle cx="80" cy="209" r="4.5" fill="#9CC2BF"/><text x="96" y="214" font-size="16" fill="#2E4048">Human approval before answers ship</text><circle cx="80" cy="238" r="4.5" fill="#9CC2BF"/><text x="96" y="243" font-size="16" fill="#2E4048">PII gates &amp; tiered access</text><circle cx="80" cy="267" r="4.5" fill="#9CC2BF"/><text x="96" y="272" font-size="16" fill="#2E4048">AI chat inside real products</text>
+    <rect x="426" y="104" width="348" height="190" rx="18" fill="#FFFFFF" stroke="#E3D7C3"/>
+    <path d="M0 8 Q14.5 4 29.0 8 T58 8 Q72.5 4 87.0 8 T116 8 Q130.5 4 145.0 8 T174 8 Q188.5 4 203.0 8 T232 8 Q246.5 4 261.0 8 T290 8 Q304.5 4 319.0 8 T348 8 L348 0 L0 0 Z" transform="translate(426 104)" fill="#B3CAD6" opacity=".55"/>
+    <rect x="426" y="104" width="348" height="8" fill="#B3CAD6" opacity=".55"/>
+    <text x="452" y="148" font-size="20" font-weight="800" fill="#4A7189">Full Stack Product</text><circle cx="456" cy="180" r="4.5" fill="#B3CAD6"/><text x="472" y="185" font-size="16" fill="#2E4048">Next.js / React + TypeScript</text><circle cx="456" cy="209" r="4.5" fill="#B3CAD6"/><text x="472" y="214" font-size="16" fill="#2E4048">FastAPI services in Python</text><circle cx="456" cy="238" r="4.5" fill="#B3CAD6"/><text x="472" y="243" font-size="16" fill="#2E4048">Postgres, Supabase, Redis</text><circle cx="456" cy="267" r="4.5" fill="#B3CAD6"/><text x="472" y="272" font-size="16" fill="#2E4048">Strapi &amp; Sanity CMS</text>
+    <rect x="802" y="104" width="348" height="190" rx="18" fill="#FFFFFF" stroke="#E3D7C3"/>
+    <path d="M0 8 Q14.5 4 29.0 8 T58 8 Q72.5 4 87.0 8 T116 8 Q130.5 4 145.0 8 T174 8 Q188.5 4 203.0 8 T232 8 Q246.5 4 261.0 8 T290 8 Q304.5 4 319.0 8 T348 8 L348 0 L0 0 Z" transform="translate(802 104)" fill="#E6B19D" opacity=".55"/>
+    <rect x="802" y="104" width="348" height="8" fill="#E6B19D" opacity=".55"/>
+    <text x="828" y="148" font-size="20" font-weight="800" fill="#A35E4A">Product &amp; Delivery</text><circle cx="832" cy="180" r="4.5" fill="#E6B19D"/><text x="848" y="185" font-size="16" fill="#2E4048">BRD → MVP in focused sprints</text><circle cx="832" cy="209" r="4.5" fill="#E6B19D"/><text x="848" y="214" font-size="16" fill="#2E4048">Admin portals teams run daily</text><circle cx="832" cy="238" r="4.5" fill="#E6B19D"/><text x="848" y="243" font-size="16" fill="#2E4048">Role-based access &amp; audit logs</text><circle cx="832" cy="267" r="4.5" fill="#E6B19D"/><text x="848" y="272" font-size="16" fill="#2E4048">Mentoring AI &amp; dev cohorts</text>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="319" rx="22" fill="none" stroke="#E3D7C3"/>
+</svg>

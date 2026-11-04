@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="290" height="64" viewBox="0 0 290 64" role="img" aria-label="Seen Ventures: seen-ventures.com">
+  <defs><clipPath id="fr"><rect width="290" height="64" rx="22"/></clipPath></defs>
+  <g clip-path="url(#fr)" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif">
+    <rect width="290" height="64" fill="#FBF8F2"/>
+    
+    <rect width="290" height="64" fill="#E6B19D" fill-opacity=".22"/>
+    <circle cx="34" cy="32" r="21" fill="#E6B19D" fill-opacity=".55"/>
+    <g transform="translate(34 32) scale(.62) translate(-34 -32)"><circle cx="34" cy="32" r="17" fill="none" stroke="#A35E4A" stroke-width="2.6"/><ellipse cx="34" cy="32" rx="7" ry="17" fill="none" stroke="#A35E4A" stroke-width="2.2"><animate attributeName="rx" values="7;12;3;7" dur="5s" repeatCount="indefinite"/></ellipse><path d="M18 26 H50 M18 38 H50" stroke="#A35E4A" stroke-width="2.2"/></g>
+    <text x="66" y="29" font-size="16.5" font-weight="800" fill="#2E4048">Seen Ventures</text>
+    <text x="66" y="48" font-size="12.5" font-weight="700" fill="#A35E4A">seen-ventures.com</text>
+    <text x="266" y="38" font-size="18" font-weight="800" fill="#A35E4A" text-anchor="end">→
+      <animate attributeName="x" values="266;272;266" dur="1.4s" repeatCount="indefinite"/></text>
+  </g>
+  <rect x=".5" y=".5" width="289" height="63" rx="22" fill="none" stroke="#E3D7C3"/>
+</svg>
